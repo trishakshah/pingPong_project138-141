@@ -25,10 +25,30 @@
         <br><br>
         <button class="glyphicon glyphicon-play btn btn-success" style="font-size: 35px; margin-bottom: 10px;" id="playButton" onclick="play()"></button>
         <br><br>
-        <h2 id="status" style="background-color: rgba(70, 70, 70, 0.418); color: white; width: 50%;">Hi</h2>
+        <h2 id="status" style="background-color: rgba(70, 70, 70, 0.418); color: white; width: 50%;"></h2>
         <br><br>
         <div id="canvasDiv"></div>
         <div id="consoleDiv"></div>
+        <br><br>
+        <button onclick="restart()" class="btn btn-info">Restart</button>
+
+
+        <div id="instructionsPopup" class="modal fade">
+            <div class="modal-header">
+                <h2>How To Play</h2>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>First keep your laptop screen straight.</li>
+                    <li>Move yourself approximately 3-4 feet away from the laptop.</li>
+                    <li>Move your right wirst in ascending and descending manner. A red dot should appear on your right wrist.</li>
+                    <li>Now press the play button, and again move yourself 3-4 feet away from laptop.</li>
+                    <li>The red paddle is your paddle, that will move as per movement of your right wrist.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="footer" style="position: fixed;bottom: 0;margin: 0; line-height: 3;">Developed by Trisha Shah :)</div>
     </center>
     <script src="main.js"></script>
 </body>
